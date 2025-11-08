@@ -10,12 +10,12 @@ export default function App() {
     <div>
       <Router>
         <Routes>
-          <Route path='/' element={<Root />}>
-            <Route exact path='/' element={<Home />} />
-            <Route path='/presentations/:presentationId'  element={<Presentation />} />
-            <Route path='/not_found' element={<NotFound />} />
-            <Route path='*'  element={<Redirect404 />} />
+          <Route path='/epresentation' element={<Root />}>
+            <Route exact index element={<Home />} />
+            <Route path='presentations/:presentationId'  element={<Presentation />} />
+            <Route path='not_found' element={<NotFound />} />
           </Route>
+          <Route path='*'  element={<Redirect404 />} />
         </Routes>
       </Router>
     </div>

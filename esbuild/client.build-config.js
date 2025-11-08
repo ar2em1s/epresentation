@@ -17,7 +17,7 @@ const generateBuild = async () => {
     entryPoints: ['./src/client/index.jsx'],
     incremental: true,
     minify: true,
-    outdir: './build/public//static/',
+    outdir: './build/public/static/',
     plugins: [yamlPlugin()],
   }).catch(() => process.exit(1))
 

@@ -3,7 +3,7 @@ import { Link as RouterLink } from 'react-router-dom'
 
 export default function Link({ presentation, children, className }) {
   return (
-    <RouterLink to={`presentations/${presentation.id}`} className={className}>
+    <RouterLink to={`/epresentation/presentations/${presentation.id}`} className={className}>
       { children || presentation.title }
     </RouterLink>
   )

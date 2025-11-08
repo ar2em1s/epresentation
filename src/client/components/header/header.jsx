@@ -19,7 +19,7 @@ export default function Header({ presentations }) {
     <Navbar color='transparent' className='max-w-screen-xl mx-auto justify-around px-4'>
       <div className='container flex justify-between items-center text-blue-grey-900'>
         <Typography
-          as='a' href='/' variant='small'
+          as='a' href='/epresentation/' variant='small'
           className='py-1.5 mr-4 cursor-pointer font-normal text-lg hover:font-semibold hover:underline flex-1'>
           EP
         </Typography>
@@ -31,7 +31,7 @@ export default function Header({ presentations }) {
         <Menu placement='bottom-end'>
           <MenuHandler>
             <div className='flex justify-end items-center flex-1'>
-              <Typography 
+              <Typography
                 as='span' variant='small'
                 className='py-1.5 cursor-pointer font-normal text-lg hidden
                            md:block hover:font-semibold hover:underline'
